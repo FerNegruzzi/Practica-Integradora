@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Producto 1",
+        "description": "Descripción del producto 1",
+        "code": 1233453453453453,
+        "price": 10.99
+    },
+    {
+        "title": "Producto 2",
+        "description": "Descripción del producto 2",
+        "code": 12347675757567567,
+        "price": 24.99
+    },
+    {
+        "title": "Producto 3",
+        "description": "Descripción del producto 3",
+        "code": 123455674567454785823,
+        "price": 7.99
+    }
+]
