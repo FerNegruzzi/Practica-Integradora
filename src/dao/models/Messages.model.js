@@ -15,10 +15,7 @@ const messagesSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
    }
-});
-const chatSchema = new mongoose.Schema({
-    messages: [messagesSchema]
 })
-const Chats = mongoose.model(collectionName, chatSchema)
+const Chats = mongoose.model(collectionName, messagesSchema)
 
 module.exports = Chats

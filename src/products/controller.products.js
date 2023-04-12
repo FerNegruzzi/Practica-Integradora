@@ -1,6 +1,6 @@
 const { Router } = require('express')
 const uploader = require('../utils/multer.utils')
-const ProductsManager = require('../dao/FileManager.dao')
+const ProductsManager = require('../dao/ProductsManager.dao')
 const ProductsDao = require('../dao/Products.dao')
 
 const router = Router()
@@ -53,6 +53,7 @@ router.post('/',uploader.single('image'), async (req, res) => {
 
 router.delete('/deleteAll', async (req, res)=> {
     await Products.deleteAll()
+    res.json({message: 'deleted all'})
 })
 
 

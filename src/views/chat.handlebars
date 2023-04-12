@@ -2,17 +2,19 @@
 
 <div>
     <input type="text" id="chatBox" placeholder="Tu mensaje">
+    <button id="btn">enviar</button>
 </div>
 <div>
 
     <br>
     <br>
     <label for="">Mensajes</label>
-    <p id="messageLogs"></p>
+    <div id="messageLogs">
+        {{#each chats}}
+        <p>{{this.sender}}: {{this.message}}</p>
+        {{/each}}
+    </div>
 </div>
 
-
-
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/socket.io/socket.io.js"></script>
-<script src="/message/controller.messages.js"></script>
+<script src="/js/messages.js"></script>

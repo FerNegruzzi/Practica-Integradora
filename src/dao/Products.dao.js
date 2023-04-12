@@ -10,6 +10,14 @@ class ProductsDao {
             return error
         }
     }
+    
+    async findById(id){
+        try {
+            return await Products.findById(id)
+        } catch (error) {
+            return error
+        }
+    }
 
     async createMany(newProductsInfo) {
         try {
